@@ -1,0 +1,63 @@
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <i class="bi bi-house-fill"></i>
+  </nav>
+  
+  <div class="card border-light mb-3" id="my-div" style="max-width: 18rem;">
+    <div class="card-header">
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <i class="bi bi-arrow-right"></i>
+      </a>
+      
+    </div>
+    <div class="collapse"  id="collapseExample">
+      <div class="card card-body" style="width: 250px;">
+        <h5>.Explore the world of management</h5>
+        <p>.Technical Proect Management</p>
+        <p>.Threadbuild</p>
+        <p>.Structure you pointers</p>
+        <p>.4SA Method</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 color="primary" style="color: blue;">Technical Project Management</h3> 
+  <button type="button" class="btn btn-primary">Submit Task</button>
+  <br>
+  <br>
+  <div class="alert alert-dark" role="alert">
+    <h5 style="color: black;">Explore the world of management</h5>
+    As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling and completion. How? Do you want to manage each and every step of your life?
+  </div>
+  <br>
+  <div class="card-grid">
+    <div class="card" *ngFor="let item of assetlist; let i=index">
+      <div class="card-header bg-dark text-light">{{item.asset_title}}</div>
+      <div class="card-body text-dark">
+        <h5 style="color: black;">Description:</h5>{{item.asset_description}}
+        <br>
+        <div *ngIf="item.asset_id == 18883">
+          <iframe class="mx-auto" width="100%" height="380" src="https://www.youtube.com/embed/TiMRwri1xJ8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div *ngIf="item.asset_id == 18884">
+        </div>
+        <div *ngIf="item.asset_id == 18886">
+          <iframe src="https://dtthon.deepthought.education/sharer?id=01aa3cff-db8e-8d9d-afc0-1671715937878" width="100%" height="500"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    
+  
+  
+    
+    
+  
